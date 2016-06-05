@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=e9c9fbfc2f">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=ada1e3c6cb">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="index.html">
@@ -69,10 +69,28 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=146022895801391";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+	
+	var youTubeChannelURL = "https://www.youtube.com/channel/UC4iDHhwhwuLNd26g3T18dpg";
+	
+	//optional parameters-----------------------------------------------
+	//var youTubePlaylistURL = "http://www.youtube.com/playlist?list=PLHFlHpPjgk713fMv5O4s4Fv7k6yTkXwkV";
+	var youmaxDefaultTab = "featured";
+	
+	function goClicked() {
+		$('#yunero').empty().append(' loading ...');
+		youTubeChannelURL=$('#youTubeChannelUrl').val();
+		
+		prepareYoumax();
+	}
+
+</script>
 
 
 
-    <div class="nav">
+    <input type="checkbox" id="show-menu" class="show-menu">
+<div class="nav">
     <h3 class="nav-title">Menu</h3>
     <a href="index.html#" class="nav-close">
         <span class="hidden">Close</span>
@@ -82,14 +100,13 @@
             <li class="nav-about" role="presentation"><a href="../about/">About</a></li>
             <li class="nav-articles" role="presentation"><a href="../tag/articles/">Articles</a></li>
             <li class="nav-curriculum" role="presentation"><a href="../tag/curriculum/">Curriculum</a></li>
-            <li class="nav-publication" role="presentation"><a href="../">Publication</a></li>
-            <li class="nav-videos" role="presentation"><a href="../">Videos</a></li>
-            <li class="nav-contact" role="presentation"><a href="../">Contact</a></li>
+            <li class="nav-publications" role="presentation"><a href="../tag/publications/">Publications</a></li>
+            <li class="nav-videos" role="presentation"><a href="../tag/videos/">Videos</a></li>
+            <li class="nav-contact" role="presentation"><a href="../contact/">Contact</a></li>
     </ul>
-        <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
 </div>
 <span class="nav-cover"></span>
-
 
     <div class="site-wrapper">
 
@@ -107,7 +124,11 @@
     <article class="post tag-articles">
 
         <header class="post-header">
-            <h1 class="post-title">Filter</h1>
+            <ul class="post-header__breadcrumb">
+    <li><a href="../" title="blog homepage">Home</a></li>
+    <li>-</li>
+    <li>Filter</li>
+</ul>            <h1 class="post-title">Filter</h1><br>
             <section class="post-meta">
                 <time class="post-date" datetime="2016-06-05">05 June 2016</time>  on <a href="../tag/articles/">Articles</a>
             </section>
@@ -128,6 +149,8 @@ And in that stage you may not feel the existence of the filter. </p>
 <p>Yes.. This world around you is a formality. <br>
 But the real fact is not known unless you can communicate properly. <br>
 Try to understand the Love (the Filter) that doesn't allow the bad things in the communication.</p>
+            <div id="disqus_thread"></div>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         </section>
 
         <footer class="post-footer">
@@ -147,7 +170,7 @@ Try to understand the Love (the Filter) that doesn't allow the bad things in the
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Filter&amp;url=http://localhost:2368/articles-filter/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <a class="icon-twitter" href="https://twitter.com/share?text=Filter&amp;url=http://localhost:2368/articles-filter/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
                 <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/articles-filter/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
@@ -157,7 +180,6 @@ Try to understand the Love (the Filter) that doesn't allow the bad things in the
                     <span class="hidden">Google+</span>
                 </a>
             </section>
-
 
         </footer>
 
@@ -178,14 +200,16 @@ Try to understand the Love (the Filter) that doesn't allow the bad things in the
         <footer class="site-footer clearfix">
             <section class="copyright"><a href="../">Ghani Academy</a> © 2016</section>
             <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+            <section class="poweredby">Proudly designed by <a href="https://zirafon.org">Zirafon</a></section>
         </footer>
 
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=e9c9fbfc2f"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=e9c9fbfc2f"></script>
+
+    <script type="text/javascript" src="../assets/js/index.js?v=ada1e3c6cb"></script>
+    <script type="text/javascript" src="../assets/js/prism.js?v=ada1e3c6cb"></script>
 
 
 </body>
