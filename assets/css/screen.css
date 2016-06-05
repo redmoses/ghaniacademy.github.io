@@ -677,7 +677,8 @@ iframe {
     margin-bottom: 5rem;
     text-align: center;
     background: #222 no-repeat 50%;
-    background-size: cover;
+    /*background-size: cover;*/
+    background-repeat: repeat;
     overflow: hidden
 }
 .main-header .inner {
